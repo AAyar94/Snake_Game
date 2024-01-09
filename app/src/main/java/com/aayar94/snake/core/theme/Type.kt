@@ -1,4 +1,4 @@
-package com.aayar94.snake.ui.theme
+package com.aayar94.snake.core.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
