@@ -93,7 +93,7 @@ class SnakeGame(private val scope: CoroutineScope, context: Context) {
                         snakeLength++
                         it.scoreState = it.scoreState + 1
                         val editor = sharedPreferences.edit()
-                        if (it.scoreState >= savedHighScore) {
+                        if (it.scoreState >= it.highScore) {
                             editor.putInt("high_score", it.scoreState)
                             editor.apply()
                         }
